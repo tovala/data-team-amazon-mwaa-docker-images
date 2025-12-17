@@ -6,7 +6,7 @@ from requests.auth import HTTPBasicAuth
 from requests import HTTPError, RequestException
 from typing import Any, Dict, List
 from pendulum import duration
-
+from common.slack_notifications import bad_boy, good_boy
 
 from airflow.sdk import dag, task, chain, Variable
 from airflow.exceptions import AirflowException
